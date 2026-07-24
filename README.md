@@ -1,43 +1,50 @@
-# 🚀 AI-Powered Project Management Platform
+# SmartPM - Modern AI Project Manager
 
-A modern, full-stack SaaS application for intelligent project management.
+SmartPM is a high-performance, AI-driven project management dashboard built with React and Tailwind CSS. It features a modern design system, glassmorphic elements, and a dedicated AI assistant for task automation.
+
+## 🚀 Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Navigate to the client directory:
+   ```bash
+   cd client
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+### 🛠 Technology Stack
+- **Frontend**: React 18, Vite
+- **Styling**: Tailwind CSS, Lucide Icons
+- **Animations**: Framer Motion
+- **Routing**: React Router DOM (v6)
+- **Theme**: Dark/Light mode support via Context API
+
+## 📁 Folder Structure
+- `src/components`: Reusable UI components (Sidebar, Header, Layout)
+- `src/pages`: Individual page views (Dashboard, Tasks, AI Assistant)
+- `src/context`: Global state management for themes
+- `src/index.css`: Tailwind configuration and global styles
 
 ## ✨ Features
-- **Intelligent Dashboard**: Real-time analytics with productivity charts (Recharts).
-- **AI Specialist**: Project idea generation and task breakdowns powered by OpenAI.
-- **Project Management**: Full CRUD operations for projects with categories and status tracking.
-- **Task Portal**: Project-specific task management with status toggling.
-- **Security**: JWT-based authentication and protected routes.
-- **Premium UI**: Clean, responsive design with Dark/Light mode support (Tailwind CSS + Framer Motion).
+- **AI Specialist**: Generate task breakdowns and project ideas (currently mocked for frontend demo).
+- **Interactive Dashboard**: Real-time stats and project progress tracking.
+- **Dynamic Tasks**: Filterable and searchable task management system.
+- **Micro-interactions**: Smooth transitions and hover effects using Framer Motion.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop views.
 
-## 🛠 Tech Stack
-- **Frontend**: React (Vite), Tailwind CSS, Framer Motion, Recharts, Axios.
-- **Backend**: Node.js, Express, MongoDB, Mongoose, OpenAI SDK.
-- **Deployment**: Render (Backend), Vercel (Frontend), MongoDB Atlas (Database).
+---
 
-## 🚀 Quick Start (Local)
-
-### 1. Backend Setup
-1. Navigate to the `server` directory.
-2. Create a `.env` file with:
-   ```env
-   PORT=5000
-   MONGODB_URI=your_mongodb_uri
-   JWT_SECRET=your_jwt_secret
-   OPENAI_API_KEY=your_openai_key
-   ```
-3. Run `npm install` and `npm run dev`.
-
-### 2. Frontend Setup
-1. Navigate to the `client` directory.
-2. Create a `.env` file with:
-   ```env
-   VITE_API_URL=http://localhost:5000/api
-   ```
-3. Run `npm install` and `npm run dev`.
-
-## 🌐 Production Deployment
-See [DEPLOYMENT.md](./DEPLOYMENT.md) for full cloud hosting instructions.
-
-## 📄 License
-MIT
+*Note: This is the Frontend UI phase. Backend integration (Node.js/Express/MongoDB) follows in Step 2.*
